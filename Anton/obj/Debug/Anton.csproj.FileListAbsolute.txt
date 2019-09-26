@@ -1,0 +1,10 @@
+C:\Users\josha\source\repos\Anton\Anton\bin\Debug\Anton.exe.config
+C:\Users\josha\source\repos\Anton\Anton\bin\Debug\Anton.exe
+C:\Users\josha\source\repos\Anton\Anton\bin\Debug\Anton.pdb
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.csprojAssemblyReference.cache
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.Form1.resources
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.Properties.Resources.resources
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.csproj.GenerateResource.cache
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.csproj.CoreCompileInputs.cache
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.exe
+C:\Users\josha\source\repos\Anton\Anton\obj\Debug\Anton.pdb
