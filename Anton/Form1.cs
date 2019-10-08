@@ -11,6 +11,46 @@ using System.Windows.Forms;
 
 namespace Anton
 {
+
+    main.listener = new TcpListener(IPAddress.Any, main.port);
+    main.listener.Start();
+
+    while (main.IsRunning)
+    {
+        try
+        {
+            TcpClient client = main.listener.AcceptTcpClient();
+            ThreadPool.QueueUserWorkItem(GetRequestedItem, client);
+        }
+
+        catch(Exception ex)
+        {
+            Console.WriteLine("Error recieved: " + ex.message);
+        }
+    }
+
+    private bool _isRunning;
+    static readonly object _isRunningLock = new Object();
+    public bool IsRunning
+    {
+        get
+        {
+            lock (_isRunningLock)
+            {
+                return this._isRunning;
+            }
+        }
+        set
+        {
+            lock (_isRunningLock)
+            {
+                this._isRunning = value;
+            }
+            cmdStart.Enabled = !value;
+            cmdStop.Enabled = value;
+        } 
+    }
+    
     public partial class Form1 : Form
     {
         public Form1()
